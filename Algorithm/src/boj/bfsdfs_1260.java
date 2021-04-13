@@ -1,10 +1,5 @@
 package boj;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-
 /*
  * 날짜: 2021/04/11
  * 문제: 백준 알고리즘 1260번_DFS와 BFS
@@ -12,16 +7,17 @@ import java.io.InputStreamReader;
  * 		+ https://developer-mac.tistory.com/63
  */
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
 
 public class bfsdfs_1260 {
-	static Scanner sc = new Scanner(System.in);
 	static int iN; //정점개수
 	static int iM; //간선개수
 	static int iV; //시작번호
@@ -66,7 +62,7 @@ public class bfsdfs_1260 {
         bfs(iV);
         System.out.println();
 		
-		sc.close();
+		br.close();
 		}
 		
 	private static void dfs(int x) {
