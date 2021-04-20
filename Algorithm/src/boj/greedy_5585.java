@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 /*
  * 날짜: 2021/04/19
  * 문제: 백준 알고리즘 5585번_거스름돈
- * 설명: 
+ * 설명: 그리디
  */
 
 public class greedy_5585 {
