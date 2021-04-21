@@ -5,6 +5,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/*
+ * 날짜: 2021/04/20
+ * 문제: 백준 알고리즘 4796번_캠핑
+ * 설명: 그리디
+ */
+
 public class greedy_4796 {
 	static int v; //휴가일수
 	static int p; //연속하는 일수
