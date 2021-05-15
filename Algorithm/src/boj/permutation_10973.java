@@ -13,25 +13,27 @@ import java.util.StringTokenizer;
  */
 
 public class permutation_10973 {
-	static int n;
-	static int[] arr;
-	
+
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		n = stoi(br.readLine());
-		arr = new int[n];
+		int n = stoi(br.readLine());
+		int[] arr = new int[n];
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		for(int i=0; i<n; i++) {
 			arr[i] = stoi(st.nextToken());
 		}
 		
-		prevPermutation(arr);
-		
-		for(int i : arr) {
-			System.out.print(i + " ");
+		if(prevPermutation(arr)) {
+			for(int i : arr) {
+				System.out.print(i + " ");
+			}
+		} else {
+			System.out.println("-1");
 		}
+		
+		
 	}
 	
 	public static int stoi(String str) {
@@ -50,9 +52,10 @@ public class permutation_10973 {
 		if(i<=0) return false;
 		
 		int j = arr.length-1;
-		
+		//나보다 다음뻔째 큰수 찾기
 		while(arr[j] >= arr[i-1]) j--;
-		
+		//arr[j] < arr[i-1]
+
 		swap(arr, i-1, j);
 		j = arr.length - 1;
 		while(i < j) {
