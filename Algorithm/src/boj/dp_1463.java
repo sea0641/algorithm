@@ -2,6 +2,12 @@ package boj;
 
 import java.util.Scanner;
 
+/*
+ * 날짜: 2021/05/21
+ * 문제: 백준 알고리즘 1463번_1로 만들기
+ * 설명: 
+ */
+
 public class dp_1463 {
 
 	public static void main(String[] args) {
