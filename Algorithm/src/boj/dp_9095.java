@@ -5,6 +5,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
+/*
+ * 날짜: 2021/05/21
+ * 문제: 백준 알고리즘 9095번_1,2,3 더하기
+ * 설명: https://zorba91.tistory.com/43
+ */
+
 public class dp_9095 {
    public static void main(String[] args) throws IOException {
       Scanner scanner = new Scanner(System.in);
