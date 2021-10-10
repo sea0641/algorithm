@@ -22,7 +22,7 @@ public class HashMap_04_01 {
 		for(char c : str.toCharArray()) {
 			hm.put(c, hm.getOrDefault(c, 0) + 1);
 		}
-		
+		/*
 		Iterator<Character> it = hm.keySet().iterator();
 		int answer = 0;
 		Character ch = null;
@@ -32,7 +32,11 @@ public class HashMap_04_01 {
 				answer = hm.get(c);
 				ch = c;
 			}
-		}
+		}*/
+		
+		hm.forEach((key, value) -> {
+			System.out.println(key + ", " + value);
+		});
 		
 		/*
 		1. iterator 말고 keySet() For 사용
@@ -53,7 +57,7 @@ public class HashMap_04_01 {
 		}
 		*/
 		
-		System.out.println(ch);
+//		System.out.println(ch);
 	}
 
 }
