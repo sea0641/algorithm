@@ -26,7 +26,7 @@ public class StackQueue_05_08 {
 		int n = sc.nextInt();
 		int m = sc.nextInt();
 		
-		/*
+		
 		PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>() {
 			//우선순위 1.위험도 높은 순위 2.먼저 들어온 순서
 			@Override
@@ -43,14 +43,14 @@ public class StackQueue_05_08 {
 			int tmp = sc.nextInt();
 			pq.offer(new int[] {i, tmp});
 		}
-		
+
 		int answer = 0;
 		while(!pq.isEmpty()) {
 			answer++;
 			if(pq.poll()[0] == m) break;
 		}
-		*/
 		
+		/*
 		int answer = 0;
 		Queue<Person> qu = new LinkedList<>();
 		for(int i=0; i<n; i++) {
@@ -72,7 +72,7 @@ public class StackQueue_05_08 {
 				if(tmp.id == m) break;
 			}
 		}
-		
+		*/
 		System.out.println(answer);
 	}
 
