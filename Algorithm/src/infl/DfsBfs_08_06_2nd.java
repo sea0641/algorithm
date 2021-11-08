@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /*
  * 10이하의 N개 자연수 중 M개를 뽑아 나열
- * 순열(중복X), 중복허용하지 않으므로 방문여부 배열 체크 + 백트래킹
+ * 순열(중복X), 순서 담을 배열 필요, 중복허용하지 않으므로 방문여부 배열 체크 + 백트래킹
  */
 public class DfsBfs_08_06_2nd {
 	static int N, M;

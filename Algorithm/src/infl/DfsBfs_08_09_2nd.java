@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 /*
  * 조합은 순서를 상관하지 않는다. 그렇기 때문에 맨 앞에서 부터 탐색할 필요 X
- * for문 돌때 12 13 14 21 X 23 24 이렇게 간다. 조합이기 때문
  * 동일한 숫자를 탐색하지 않기때문에 visited 배열도 필요 X
  */
 public class DfsBfs_08_09_2nd {
@@ -24,6 +23,7 @@ public class DfsBfs_08_09_2nd {
 			for(int i=s; i<=N; i++) {
 				combi[L] = i;
 				DFS(L+1, i+1);
+				//DFS(L+1, i); 중복조합
 			}
 		}
 	}

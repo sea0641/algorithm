@@ -19,6 +19,12 @@ public class DfsBfs_08_08_2nd {
 	static boolean flag = false;
 	static int[][] dy = new int[10][10];
 	
+	/*
+	 * 재귀 + 메모이제이션
+	 * nCr = n! / (n-r)!r! 이다.
+	 * nCr = n-1Cr-1 + n-1Cr 재귀로 계산하시오.
+	 * 나를 포함하여 뽑은 경우 + 나를 포함하지 않고 뽑은 경우
+	 */
 	static int combi(int n, int r) {
 		if(dy[n][r] > 0) return dy[n][r];
 		if(r == 0 || n == r) return dy[n][r] = 1;
@@ -28,8 +34,11 @@ public class DfsBfs_08_08_2nd {
 	static void DFS(int L) {
 		if(flag) return;
 		
+		//순열 배열의 N개의 요소의 합이 F가 되는지 확인 
 		if( L == N ) {
 			int sum = 0;
+			
+			//공식사용 계산을 위한 조합 계산
 			for(int i=0; i<N; i++) {
 				sum += arr[i] * combi(N-1, i);
 			}
@@ -39,6 +48,7 @@ public class DfsBfs_08_08_2nd {
 				flag = true;
 			}
 		} else {
+			//순열 구하기
 			for(int i=0; i<N; i++) {
 				if(!visited[i]) {
 					visited[i] = true;

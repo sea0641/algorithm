@@ -22,6 +22,7 @@ public class DfsBfs_08_13_2nd {
 			int ny = y + dy[i];
 			
 			if(nx >= 0 && nx < N && ny >= 0 && ny < N) {
+				//근방에 연결되어있는 지점이 있다면 계속 탐색
 				if(map[nx][ny] == 1) {
 //					map[nx][ny] = 0;
 					DFS(nx, ny);
@@ -44,6 +45,7 @@ public class DfsBfs_08_13_2nd {
 		for(int i=0; i<N; i++) {
 			for(int j=0; j<N; j++) {
 				if(map[i][j] == 1) {
+					//하나의 DFS 호출이 끝나고 방문하지 않은 지역(1)을 만날때마다 카운트 + DFS로 연결되어있는 영역 체크
 					answer++;
 //					map[i][j] = 0;
 					 DFS(i, j);

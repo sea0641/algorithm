@@ -8,6 +8,10 @@ import java.util.Scanner;
  * 날짜: 2021/11/07
  * 문제: 인프런 DFSBFS 08-12 토마토(BFS 활용)
  */
+
+/*
+ * 익은 토마토를 처음 qu에 넣어놓고 그 근방을 퍼져갈때마다 +1을 하여 저장한다. 해당 배열의 가장 최댓값이 모든 토마토들이 익는데 걸리는 일수이다. -1
+ */
 public class DfsBfs_08_12_2nd {
 	static int M,N;
 	static int[][] box;
