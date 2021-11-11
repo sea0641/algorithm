@@ -10,19 +10,19 @@ import java.util.Scanner;
  * 문제: 인프런 그리디 09-02 회의실 배정
  */
 
-class Conf implements Comparable<Conf>{
-	int sT, eT;
-	Conf(int sT, int eT) {
-		this.sT = sT;
-		this.eT = eT;
-	}
-	
-	@Override
-	public int compareTo(Conf o) {
-		if(this.eT != o.eT) return this.eT - o.eT; //끝나는 시간 오름차순
-		else return this.sT - o.sT; //끝나는 시간이 같으면 시작시간 오름차순
-	}
-}
+//class Conf implements Comparable<Conf>{
+//	int sT, eT;
+//	Conf(int sT, int eT) {
+//		this.sT = sT;
+//		this.eT = eT;
+//	}
+//	
+//	@Override
+//	public int compareTo(Conf o) {
+//		if(this.eT != o.eT) return this.eT - o.eT; //끝나는 시간 오름차순
+//		else return this.sT - o.sT; //끝나는 시간이 같으면 시작시간 오름차순
+//	}
+//}
 public class Greedy_09_02 {
 
 	public static void main(String[] args) {

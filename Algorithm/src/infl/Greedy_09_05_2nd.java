@@ -35,7 +35,7 @@ public class Greedy_09_05_2nd {
 			graph.add(new ArrayList<Edge>());
 		}
 		
-		int[] dis = new int[n+1];  //1번 정점부터 각 정점까지 최단거리
+		int[] dis = new int[n+1];  //1번 정점부터 각 정점까지 최단거리 배열
 		Arrays.fill(dis, Integer.MAX_VALUE);
 		
 		//그래프 인접리스트 행렬 만들기
@@ -47,7 +47,7 @@ public class Greedy_09_05_2nd {
 		}
 		
 		//최단거리 구하기
-		PriorityQueue<Edge> pq = new PriorityQueue<Edge>();
+		PriorityQueue<Edge> pq = new PriorityQueue<Edge>(); //Edge 정렬기준인 비용 오름차순
 		//시작점
 		pq.offer(new Edge(1, 0));
 		dis[1] = 0;
@@ -59,6 +59,7 @@ public class Greedy_09_05_2nd {
 			//현재 비용이 이미 최소비용보다 크다면 해당 정점과 연결된 정점들은 더 볼필요없다.
 			if(nowCost > dis[now]) continue;
 			
+			//해당 정점과 연결된 정점 돌면서 최소비용 정점,거리 찾기
 			for(Edge ne : graph.get(now)) {
 				if(dis[ne.vex] > nowCost + ne.cost) {
 					dis[ne.vex] = nowCost + ne.cost; //낮은 최소비용 갱신

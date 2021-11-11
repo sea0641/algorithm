@@ -9,17 +9,17 @@ import java.util.Scanner;
  * 문제: 인프런 그리디 09-01 씨름 선수
  */
 
-class Body implements Comparable<Body> {
-	public int h, w;
-	Body(int h, int w) {
-		this.h = h;
-		this.w = w;
-	}
-	
-	public int compareTo(Body o) {
-		return o.h - this.h; //내림차순
-	};
-}
+//class Body implements Comparable<Body> {
+//	public int h, w;
+//	Body(int h, int w) {
+//		this.h = h;
+//		this.w = w;
+//	}
+//	
+//	public int compareTo(Body o) {
+//		return o.h - this.h; //내림차순
+//	};
+//}
 
 public class Greedy_09_01 {
 

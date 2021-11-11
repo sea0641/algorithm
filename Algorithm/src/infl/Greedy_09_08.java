@@ -47,9 +47,11 @@ public class Greedy_09_08 {
 		while(!pq.isEmpty()) {
 			Edge tmp = pq.poll();
 			int ev = tmp.vex;
+			//트리에 포함되지 않았다면 포함
 			if(ch[ev] == 0) {
 				ch[ev] = 1;
 				answer += tmp.cost;
+				//해당 정점과 연결된 다른 정점 큐에 추가
 				for(Edge ob : graph.get(ev)) {
 					if(ch[ob.vex] == 0) pq.offer(new Edge(ob.vex, ob.cost));
 				}

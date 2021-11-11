@@ -10,19 +10,19 @@ import java.util.Scanner;
  * 문제: 인프런 그리디 09-05 다익스트라 알고리즘
  */
 
-class Edge implements Comparable<Edge>{
-	public int vex;
-	public int cost;
-	Edge(int vex, int cost) {
-		this.vex = vex;
-		this.cost = cost;
-	}
-	
-	@Override
-	public int compareTo(Edge o) {
-		return this.cost - o.cost;
-	}
-}
+//class Edge implements Comparable<Edge>{
+//	public int vex;
+//	public int cost;
+//	Edge(int vex, int cost) {
+//		this.vex = vex;
+//		this.cost = cost;
+//	}
+//	
+//	@Override
+//	public int compareTo(Edge o) {
+//		return this.cost - o.cost;
+//	}
+//}
 public class Greedy_09_05 {
 	static int n, m;
 	static ArrayList<ArrayList<Edge>> graph;

@@ -10,21 +10,21 @@ import java.util.Scanner;
  * 문제: 인프런 그리디 09-03 결혼식
  */
 
-class Time implements Comparable<Time>{
-	public int time;
-	public char state; //들어올때:s, 나갈떄:e
-	
-	Time(int time, char state) {
-		this.time = time;
-		this.state = state;
-	}
-	
-	@Override
-	public int compareTo(Time o) {
-		if(this.time == o.time) return this.state - o.state;
-		else return this.time - o.time;
-	}
-}
+//class Time implements Comparable<Time>{
+//	public int time;
+//	public char state; //들어올때:s, 나갈떄:e
+//	
+//	Time(int time, char state) {
+//		this.time = time;
+//		this.state = state;
+//	}
+//	
+//	@Override
+//	public int compareTo(Time o) {
+//		if(this.time == o.time) return this.state - o.state;
+//		else return this.time - o.time;
+//	}
+//}
 
 public class Greedy_09_03 {
 

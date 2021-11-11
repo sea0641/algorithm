@@ -11,20 +11,20 @@ import java.util.Scanner;
  * 문제: 인프런 그리디 09-04 최대 수입 스케쥴(PriorityQueue 응용문제)
  */
 
-class Lecture implements Comparable<Lecture>{
-	int money;
-	int time;
-	
-	Lecture(int money, int time) {
-		this.money = money;
-		this.time = time;
-	}
-	
-	@Override
-	public int compareTo(Lecture o) {
-		return o.time - this.time; //일자 내림차순
-	}
-}
+//class Lecture implements Comparable<Lecture>{
+//	int money;
+//	int time;
+//	
+//	Lecture(int money, int time) {
+//		this.money = money;
+//		this.time = time;
+//	}
+//	
+//	@Override
+//	public int compareTo(Lecture o) {
+//		return o.time - this.time; //일자 내림차순
+//	}
+//}
 public class Greedy_09_04 {
 	
 	public static void main(String[] args) {
